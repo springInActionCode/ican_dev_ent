@@ -1,7 +1,7 @@
 #!/bin/bash
-
+npm install -g cnpm --registry=https://registry.npm.taobao.org
 cd /usr/local/workspace/project-dhlgl/dhl-web
 
-npm build
+cnpm build
 
 echo "build over"
