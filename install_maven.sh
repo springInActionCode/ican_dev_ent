@@ -8,13 +8,16 @@ if [ -z "${MAVEN_HOME}" ]; then
         #解压maven
    wget https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
         tar -vxf apache-maven-3.6.3-bin.tar.gz         
+        mv apache-maven-3.6.3 /usr/local
         echo "######################################"
         echo "Begin to config environment variables,please waiting..."
         echo "######################################"
         #修改maven的环境变量，直接写入配置文件
-        echo "MAVEN_HOME=/usr/local/maven/apache-maven-3.6.3" >>/etc/profile
+        echo "MAVEN_HOME=/usr/local/apache-maven-3.6.3" >>/etc/profile
         echo "PATH=\$PATH:\$MAVEN_HOME/bin" >>/etc/profile
         #运行后直接生效
+        sleep 3s
+        echo "文件下载成功"
         source /etc/profile
         echo "环境变量设置成功"
 else
