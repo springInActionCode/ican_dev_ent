@@ -1,7 +1,7 @@
 #!/bin/bash
 ##下载脚本 执行脚本
 
-wget http://dhlsrc.oss-cn-hangzhou.aliyuncs.com/MySQL_script.tar
+wget http://project-oss.oss-cn-shenzhen.aliyuncs.com/dhlgl/MySQL_script.tar
 #解压
 tar -vxf MySQL_script.tar
  

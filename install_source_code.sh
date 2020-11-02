@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget http://dhlsrc.oss-cn-hangzhou.aliyuncs.com/project-dhlgl.tar
+wget http://project-oss.oss-cn-shenzhen.aliyuncs.com/dhlgl/project-dhlgl.tar
 
 tar -vxf project-dhlgl.tar 
 
